@@ -11,7 +11,7 @@ EXPOSE 2181 2888 3888
 
 # Install and set everything up
 RUN \
-   wget -q -N http://mirrors.cnnic.cn/apache/zookeeper/$BIN_VERSION/$BIN_VERSION.tar.gz \
+   wget -q -N http://mirror.dkd.de/apache/zookeeper/$BIN_VERSION/$BIN_VERSION.tar.gz \
 && tar --strip-components=1 -C /usr/share/zookeeper -xvf ${BIN_VERSION}.tar.gz \
 && rm $BIN_VERSION.tar.gz \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
